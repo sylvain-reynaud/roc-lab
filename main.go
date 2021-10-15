@@ -2,21 +2,26 @@ package main
 
 func main() {
 
-    cashier := &cashier{}
+	/* A hospital could have multiple departments such as:
 
-    //Set next for medical department
-    medical := &medical{}
-    medical.setNext(cashier)
+		Reception
+		Doctor
+		Medicine room
+		Cashier
 
-    //Set next for doctor department
-    doctor := &doctor{}
-    doctor.setNext(medical)
+		Whenever any patient arrives,
+		they first get to Reception,
+		then to Doctor,
+		then to Medicine Room,
+		and then to Cashier.
 
-    //Set next for reception department
-    reception := &reception{}
-    reception.setNext(doctor)
+		Exercices :
+		1- Make the patient pass through the different departments
+			check done for each department in the patient object
+		2- Wait la suite de l'exo
+		3- Make a RoC
+
+		*/
 
     patient := &patient{name: "Théo"}
-    //Patient visiting
-    reception.execute(patient)
 }
