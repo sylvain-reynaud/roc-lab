@@ -23,5 +23,5 @@ func main() {
 
 		*/
 
-    patient := &patient{name: "Théo"}
+    patient := &patient{name: "Kalil"}
 }
